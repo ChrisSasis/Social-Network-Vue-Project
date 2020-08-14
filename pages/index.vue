@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-page">
     <mainHeader/>
     <mainMenu/>
     <postContent/>
@@ -36,4 +36,10 @@ img {
   width:100%;
 }
 
+</style>
+
+<style scoped>
+.home-page {
+  padding-bottom:100px;
+}
 </style>

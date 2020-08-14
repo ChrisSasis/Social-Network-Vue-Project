@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="/profile" class="menu-link">
                     <div class="user-icon-holder" style="background-image:url('https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt_400x400.jpg')">
                         <img src="" alt="">
                     </div>
