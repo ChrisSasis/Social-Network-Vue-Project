@@ -2,7 +2,7 @@
     <div class="menu-fixed">
         <div class="menu">
             <div class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="/" class="menu-link">
                     <div class="menu-icon-holder">
                         <img src="~assets/default-img/Vector-3.svg"/>
                     </div>
@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="/create" class="menu-link">
                     <div class="menu-icon-holder">
                         <img src="~assets/default-img/Vector-1.svg"/>
                     </div>
