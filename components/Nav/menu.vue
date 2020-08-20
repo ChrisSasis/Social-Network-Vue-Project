@@ -23,18 +23,17 @@ img {
 .menu-fixed {
     position:fixed;
     bottom:15px;
-    right:15px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    max-width:800px;
+    width:100%;
     z-index:100;
 }
-/* .menu-fixed {
-    width:100%;
-    position:fixed;
-    bottom:0;
-    left:0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-} */
+.menu {
+    height:50px;
+    position:relative;
+}
 .menu-btn {
     display:block;
     background-color: #0F4C75;
@@ -44,6 +43,9 @@ img {
     border-radius:100px;
     text-align:center;
     padding:10px 0px;
+    position:absolute;
+    top:0;
+    right:20px;
 }
 .menu-btn-icon {
     width:25px;

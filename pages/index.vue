@@ -1,28 +1,39 @@
 <template>
-  <div class="home-page">
-    <mainHeader/>
-    <mainMenu/>
-    <postContent/>
-    <postContent/>
-    <postContent/>
-    <postContent/>
-    <postContent/>
-  </div>
+    <div class="profile-page">
+        <!-- <mainHeader/> -->
+        <mainMenu/>
+        <div class="bg-color">
+          <profileContent/>
+        </div>
+        <div class="post-container">
+          <h2 class="my-wall-title">My Wall</h2>
+          <postContent/>
+          <postContent/>
+          <postContent/>
+          <postContent/>
+          <postContent/>
+        </div>
+    </div>
 </template>
 
 <script>
+
 import mainHeader from '~/components/Nav/header';
 import mainMenu from '~/components/Nav/menu';
 import postContent from '~/components/Post/postContent';
+import profileContent from '~/components/Profile/profileContent';
 
 export default {
-  components: {
-    mainHeader,
-    mainMenu,
-    postContent
-  }
+    name: "index",
+    components: {
+        mainHeader,
+        mainMenu,
+        postContent,
+        profileContent
+    }
 }
 </script>
+
 
 <style>
 * {
@@ -38,8 +49,25 @@ img {
 
 </style>
 
+
 <style scoped>
-.home-page {
+.post-container {
+    max-width:800px;
+    margin:0 auto;
+}
+.profile-page {
   padding-bottom:100px;
+}
+.my-wall-title {
+  padding-top:30px;
+  padding-left:20px;
+  color:#fff;
+}
+.bg-color {
+  background-color:#0F4C75;
+  padding-bottom:150px;
+}
+.post-container {
+  margin-top:-150px;
 }
 </style>

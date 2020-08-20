@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style scoped>
+.profile-content {
+    max-width:800px;
+    margin:0 auto;
+}
 .profile-image {
     width:100px;
     height:100px;
@@ -46,7 +50,7 @@ export default {
 .profile-cta {
     padding-left:10px;
     text-align: right;
-    width:80%;
+    width:100%;
 }
 .btn {
     border:2px solid;
@@ -54,6 +58,7 @@ export default {
     font-size:14px;
     border-radius:100px;
     letter-spacing: 0.45px;
+    cursor:pointer;
 }
 .btn-follow {
     border:none;
@@ -80,6 +85,7 @@ export default {
 }
 .user-name {
     color:#fff;
+    font-weight: 300;
 }
 
 

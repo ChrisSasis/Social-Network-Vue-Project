@@ -1,9 +1,6 @@
 <template>
     <div class="header">
-        <a href="/profile" class="header-back">
-            <!-- <div class="header-back-holder">
-                Back to My Wall
-            </div> -->
+        <a href="/" class="header-back">
             Back To My Wall
         </a>
     </div>
@@ -21,8 +18,9 @@ img {
 }
 .header {
     text-align:right;
-    padding:10px;
-    /* box-shadow:0px 0px 4px rgba(0,0,0,0.1); */
+    padding:10px 20px;
+    max-width:800px;
+    margin:0 auto;
 }
 .header-back {
     border-radius:100px;
@@ -36,6 +34,7 @@ img {
     text-decoration:none;
     max-width:180px;
     font-size:14px;
+    font-weight: bold;
 }
 .header-back-holder {
     width:22px;

@@ -28,7 +28,9 @@ export default {
 
 <style scoped>
 .create-page {
-    padding:20px 10px;
+    padding:20px;
+    max-width:800px;
+    margin:0 auto;
 }
 .post-user-img {
     width:30px;
@@ -63,8 +65,8 @@ export default {
     vertical-align: top;
 }
 .btn-icon {
-    width:30px;
-    height:30px;
+    width:34px;
+    height:34px;
     padding-top:5px;
     overflow:hidden;
     position:relative;
@@ -88,5 +90,6 @@ export default {
     position:absolute;
     top:10px;
     right:0;
+    font-size:14px;
 }
 </style>
