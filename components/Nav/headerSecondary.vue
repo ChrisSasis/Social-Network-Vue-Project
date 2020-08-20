@@ -1,9 +1,10 @@
 <template>
     <div class="header">
-        <a href="#" class="header-back">
-            <div class="header-back-holder">
-                <img src="~assets/default-img/ion_arrow-back.svg" alt="">
-            </div>
+        <a href="/profile" class="header-back">
+            <!-- <div class="header-back-holder">
+                Back to My Wall
+            </div> -->
+            Back To My Wall
         </a>
     </div>
 </template>
@@ -19,16 +20,22 @@ img {
     width:100%;
 }
 .header {
+    text-align:right;
     padding:10px;
-    box-shadow:0px 0px 4px rgba(0,0,0,0.1);
+    /* box-shadow:0px 0px 4px rgba(0,0,0,0.1); */
 }
 .header-back {
-    width:30px;
-    height:30px;
     border-radius:100px;
-    display:block;
+    display:inline-block;
     background:#0F4C75;
     position:relative;
+    padding:10px 20px;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    text-decoration:none;
+    max-width:180px;
+    font-size:14px;
 }
 .header-back-holder {
     width:22px;

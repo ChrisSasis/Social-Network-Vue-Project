@@ -1,13 +1,18 @@
 <template>
     <div class="profile-page">
-        <mainHeader/>
+        <!-- <mainHeader/> -->
         <mainMenu/>
-        <profileContent/>
-        <postContent/>
-        <postContent/>
-        <postContent/>
-        <postContent/>
-        <postContent/>
+        <div class="bg-color">
+          <profileContent/>
+        </div>
+        <div class="post-container">
+          <h2 class="my-wall-title">My Wall</h2>
+          <postContent/>
+          <postContent/>
+          <postContent/>
+          <postContent/>
+          <postContent/>
+        </div>
     </div>
 </template>
 
@@ -48,5 +53,17 @@ img {
 <style scoped>
 .profile-page {
   padding-bottom:100px;
+}
+.my-wall-title {
+  padding-top:30px;
+  padding-left:20px;
+  color:#fff;
+}
+.bg-color {
+  background-color:#0F4C75;
+  padding-bottom:150px;
+}
+.post-container {
+  margin-top:-150px;
 }
 </style>

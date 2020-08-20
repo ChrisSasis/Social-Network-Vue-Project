@@ -2,24 +2,12 @@
     <div>
         <div class="post-holder">
             <div class="post-wrapper">
-                <div class="post-user">
-                    <div class="post-user-img" style="background-image:url('https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt_400x400.jpg')"></div>
-                </div>
                 <div class="post-content">
-                    <div class="post-header">
-                        <span class="post-creator">John Appleased</span>
-                        <span class="post-date">12 hrs ago</span>
-                    </div>
                     <div class="post-body">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aut odit, soluta esse velit modi? Laboriosam odit repellat enim ea aperiam excepturi? Animi molestiae nostrum natus commodi quod officia labore?
                     </div>
                     <div class="post-footer">
-                        <button class="btn">
-                            <div class="btn-icon">
-                                <img src="~assets/default-img/heart-active.svg">
-                            </div>
-                            <span class="btn-count">12k</span>
-                        </button>
+                        <span class="post-date">December 13, 2020</span>
                     </div>
                 </div>
             </div>
@@ -38,21 +26,10 @@ export default {
     padding:10px 20px;
 }
 .post-wrapper {
-    display:flex;
     width:100%;
 }
-.post-user-img {
-    width:30px;
-    height: 30px;
-    border-radius:100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .post-content {
-    margin-left:10px;
     background-color:#F9F9F9;
-    padding:10px 15px;
     border-radius:10px;
 }
 .post-creator ,
@@ -66,29 +43,16 @@ export default {
 }
 .post-date {
     font-size:12px;
-    padding-top:2px;
-    color:#BABABA;
+    color:#6D6D6D;
 }
 .post-body {
-    padding:10px 0px;
-    font-size:14px;
+    padding:15px;
+    font-size:16px;
     letter-spacing: 0.4px;
+    line-height: 1.3125;
 }
-.btn {
-    display:flex;
-    align-items: center;
-    padding:8px 15px;
-    background:#e0e0e0;
-    border:none;
-    border-radius:100px;
-}
-.btn-icon {
-    width:18px; 
-    height:16px;
-}
-.btn-count {
-    padding-left:5px;
-    font-size:14px;
-    font-weight:bold;
+.post-footer {
+    border-top:1px solid #F1F1F1;
+    padding:10px 15px;
 }
 </style>

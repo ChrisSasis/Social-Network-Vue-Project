@@ -2,7 +2,6 @@
     <div class="create-page">
         <div class="postarea-container">
             <div class="post-content">
-                <div class="post-user-img" style="background-image:url('https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt_400x400.jpg')"></div>
                 <div class="post-area">
                     <textarea name="" id="" cols="30" rows="10"
                     placeholder="Share Something..." class="post-textarea"></textarea>
@@ -31,11 +30,6 @@ export default {
 .create-page {
     padding:20px 10px;
 }
-.post-content {
-    display:flex;
-    flex-wrap:nowrap;
-    width:100%;
-}
 .post-user-img {
     width:30px;
     height:30px;
@@ -43,10 +37,6 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     border-radius:100px;
-}
-.post-area {
-    padding-left:20px;
-    width:90%;
 }
 .post-textarea {
     font-family:'Open Sans', sans-serif;
