@@ -1,20 +1,20 @@
 <template>
-    <div>
-        <div class="profile-content">
-            <div class="profile-holder">
-                <div class="profile-image-holder">
-                    <div class="profile-image"  style="background-image:url('https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt_400x400.jpg')"></div>
-                </div>
-                <div class="profile-cta">
-                    <button class="btn btn-follow" @click="showMenu">
-                        Settings
-                    </button>
-                </div>
-            </div>
-            <div class="profile-details">
-                <h2 class="user-name">John Appleased</h2>
+    <div class="edit-profile-page">
+        <div class="bg-color">
+            <div class="cta">
+                <a href="/" class="btn btn-back">
+                    Back to My Wall
+                </a>
+                <button class="btn btn-follow" @click="showMenu">
+                    Settings
+                </button>
             </div>
         </div>
+        <div class="form-container">
+            <h2 class="title">Change Password</h2>
+            <changePassword/>
+        </div>
+
         <!-- settings popup -->
         <div  v-bind:class="{show: settingsModal}" class="settings-modal modal hide">
             <div class="modal-holder" @click="hideMenu"></div>
@@ -28,7 +28,7 @@
                             <a href="/edit-profile" class="settings-link">Edit Profile</a>
                         </li>
                         <li>
-                            <a href="#" class="settings-link">Change Password</a>
+                            <a href="/change-password" class="settings-link">Change Password</a>
                         </li>
                         <li>
                             <a href="#" class="settings-link">Theme</a>
@@ -45,8 +45,17 @@
 </template>
 
 <script>
+import mainHeader from '~/components/Nav/header';
+import mainMenu from '~/components/Nav/menu';
+import changePassword from '~/components/Forms/changePassword';
+
 export default {
-    name: "profileContent",
+    // name: "editrofile",
+    components: {
+        mainHeader,
+        mainMenu,
+        changePassword
+    },
     data() {
         return {
             settingsModal: false
@@ -71,35 +80,37 @@ export default {
 </script>
 
 <style>
-.overflow-hidden {
-    overflow: hidden;
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family:'Roboto', sans-serif;
 }
+
+img {
+  width:100%;
+}
+
 </style>
 
 <style scoped>
-.profile-content {
-    max-width:800px;
-    margin:0 auto;
-}
-.profile-image {
-    width:100px;
-    height:100px;
-    border-radius:100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin:0 auto;
-}
-.profile-holder {
-    display: inline-flex;
-    flex-wrap:nowrap;
-    width:100%;
+.cta {
     padding:20px;
-}
-.profile-cta {
-    padding-left:10px;
     text-align: right;
-    width:100%;
+}
+.title {
+  padding-top:30px;
+  color:#fff;
+  padding-bottom:20px;
+}
+.bg-color {
+    background-color:#0F4C75;
+    padding-bottom:150px;
+    height:318px;
+}
+.form-container {
+    padding:10px 20px;
+    margin-top:-150px;
 }
 .btn {
     border:2px solid;
@@ -117,25 +128,22 @@ export default {
     font-family:'Roboto', sans-serif;
     letter-spacing:0.4px;
     outline:none;
+    text-decoration: none;
+    margin-left:10px;
 }
-.btn-edit {
-    border-color:#0F4C75;
-    color:#0F4C75;
+.btn-back {
+    border:none;
+    color:#fff;
     font-weight:bold;
-    background:transparent;
+    background:#fff;
+    font-family:'Roboto', sans-serif;
+    letter-spacing:0.4px;
+    outline:none;
+    text-decoration: none;
+    margin-left:10px;
+    color:#0F4C75;
 }
-.btn-follow:hover, 
-.btn-follow:active {
-    background: rgba(0,0,0,0.4);
-    color:#fff;
-}
-.profile-details {
-    padding:0px 20px;
-}
-.user-name {
-    color:#fff;
-    font-weight: 300;
-}
+
 .show {
     display:block !important;
 }

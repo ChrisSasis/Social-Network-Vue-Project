@@ -54,7 +54,7 @@ export default {
     font-size:14px;
 }
 .post-footer {
-    padding:10px;
+    padding:10px 0px;
     position:relative;
 }
 .btn-main {
@@ -91,5 +91,6 @@ export default {
     top:10px;
     right:0;
     font-size:14px;
+    font-weight: 600;
 }
 </style>

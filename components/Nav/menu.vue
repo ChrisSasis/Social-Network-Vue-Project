@@ -22,7 +22,7 @@ img {
 }
 .menu-fixed {
     position:fixed;
-    bottom:15px;
+    bottom:20px;
     left:0;
     right:0;
     margin:0 auto;
@@ -37,18 +37,18 @@ img {
 .menu-btn {
     display:block;
     background-color: #0F4C75;
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
     box-shadow:0px 4px 4px rgba(0,0,0,0.3);
     border-radius:100px;
     text-align:center;
-    padding:10px 0px;
+    padding:13px 0px;
     position:absolute;
     top:0;
     right:20px;
 }
 .menu-btn-icon {
-    width:25px;
+    width:30px;
     margin:0 auto;
 }
 </style>
