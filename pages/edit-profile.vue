@@ -34,7 +34,7 @@
                             <a href="#" class="settings-link">Theme</a>
                         </li>
                         <li>
-                            <a href="#" class="settings-link">Log Out</a>
+                            <a href="/login" class="settings-link">Log Out</a>
                         </li>
                     </ul>
                 </div>
