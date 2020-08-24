@@ -23,12 +23,13 @@ export default {
 <style>
 .edit-profile-form {
     background: #fff;
-    padding:15px;
+    padding:20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .form-label {
     font-size:16px;
+    font-weight:bold;
 }
 .form-holder {
     padding-bottom:20px;
@@ -37,9 +38,10 @@ export default {
     display:block;
     width:100%;
     margin-top:10px;
-    padding:10px;
-    font-size:14px;
-    border:1px solid #0F4C75;
+    padding:10px 0px;
+    font-size:16px;
+    border:none;
+    border-bottom:1px solid #0F4C75;
     outline:none;
 }
 .btn {
