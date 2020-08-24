@@ -28,7 +28,7 @@
                             <a href="/edit-profile" class="settings-link">Edit Profile</a>
                         </li>
                         <li>
-                            <a href="#" class="settings-link">Change Password</a>
+                            <a href="/change-password" class="settings-link">Change Password</a>
                         </li>
                         <li>
                             <a href="#" class="settings-link">Theme</a>

@@ -94,6 +94,10 @@ img {
 </style>
 
 <style scoped>
+.cta, .form-container {
+    max-width:800px;
+    margin:0 auto;
+}
 .cta {
     padding:20px;
     text-align: right;
