@@ -55,6 +55,14 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
   ],
+  pwa: {
+    manifest: {
+      name: "YourWall"
+    },
+    icon: {
+      filename:"/yourwall-logo.png"
+    }
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

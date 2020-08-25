@@ -2,7 +2,7 @@
     <div>
         <div class="logo">
             <div class="logo-holder">
-                <img src="https://3.bp.blogspot.com/-NxouMmz2bOY/T8_ac97cesI/AAAAAAAAGg0/e3vY1_bdnbE/s1600/Twitter+logo+2012.png" alt="">
+                <img src="/yourwall-logo.png" alt="">
             </div>
             <div class="title">BlahBlah | Beta</div>
         </div>
