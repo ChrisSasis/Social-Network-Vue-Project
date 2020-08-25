@@ -60,7 +60,7 @@ export default {
       name: "YourWall"
     },
     icon: {
-      filename:"/yourwall-logo.png"
+      source:"/yourwall-logo.png"
     }
   },
   /*
