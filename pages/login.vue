@@ -21,7 +21,7 @@
         </div>
         <div class="cta">
             <a href="#" class="bullet-right">Forgot Password?</a>
-            <a href="#">Create an Account</a>
+            <a href="/register">Create an Account</a>
         </div>
         <div class="other-cta">
             <ul class="cta-list">

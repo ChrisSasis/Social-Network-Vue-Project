@@ -11,8 +11,8 @@
             </div>
         </div>
         <div class="form-container">
-            <h2 class="title">Change Password</h2>
-            <changePassword/>
+            <h2 class="title">Theme</h2>
+            <themePicker/>
         </div>
 
         <!-- settings popup -->
@@ -47,14 +47,14 @@
 <script>
 import mainHeader from '~/components/Nav/header';
 import mainMenu from '~/components/Nav/menu';
-import changePassword from '~/components/Forms/changePassword';
+import themePicker from '~/components/Forms/themePicker';
 
 export default {
     // name: "editrofile",
     components: {
         mainHeader,
         mainMenu,
-        changePassword
+        themePicker
     },
     data() {
         return {

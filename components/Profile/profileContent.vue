@@ -31,7 +31,7 @@
                             <a href="/change-password" class="settings-link">Change Password</a>
                         </li>
                         <li>
-                            <a href="#" class="settings-link">Theme</a>
+                            <a href="/theme" class="settings-link">Theme</a>
                         </li>
                         <li>
                             <a href="/login" class="settings-link">Log Out</a>
