@@ -2,7 +2,7 @@
     <div class="theme-picker">
         <ul class="theme-list">
             <li class="theme-item">
-                <input type="radio" class="theme-checkbox" name="theme">
+                <input type="radio" class="theme-checkbox" name="theme" @change="changeTheme('#BA7967')">
                 <span class="check"></span>
             </li>
             <li class="theme-item">
@@ -38,12 +38,12 @@
                 <span class="check"></span>
             </li>
             <li class="theme-item">
-                <input type="radio" class="theme-checkbox" name="theme">
+                <input type="radio" class="theme-checkbox" name="theme" >
                 <span class="check"></span>
             </li>
         </ul>
         <div class="cta">
-            <button class="btn-main">
+            <button class="btn-main" :style="'background-color:'+this.newColor+''">
                 Done
             </button>
         </div>
@@ -52,7 +52,17 @@
 
 <script>
 export default {
-    name: "themePicker"
+    name: "themePicker",
+    data() {
+        return {
+            newColor: ''
+        }
+    },
+    methods: {
+        changeTheme(color){
+            this.newColor = color;
+        }
+    }
 }
 </script>
 
