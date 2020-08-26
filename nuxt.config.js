@@ -57,11 +57,9 @@ export default {
   ],
   pwa: {
     manifest: {
-      name: "YourWall"
+      name: "YourWall",
+      icons: ["/yourwall-logo.png"]
     },
-    icon: {
-      source:"/yourwall-logo.png"
-    }
   },
   /*
   ** Axios module configuration
