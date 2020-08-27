@@ -1,0 +1,14 @@
+query {
+    user(id:1) {
+      id
+      name
+      username
+      email
+      theme
+      posts {
+        id
+        content
+        created_at
+      }
+    }
+}

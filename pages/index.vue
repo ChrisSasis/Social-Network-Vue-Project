@@ -1,17 +1,25 @@
 <template>
     <div class="profile-page">
         <!-- <mainHeader/> -->
+        <!-- <mainMenu :color="this.user.theme"/> -->
         <mainMenu/>
+        <!-- <div class="bg-color" :style="'background-color:'+this.user.theme"> -->
         <div class="bg-color">
+          {{color}}
+          <!-- <profileContent :name="this.user.name"/> -->
           <profileContent/>
         </div>
         <div class="post-container">
-          <h2 class="my-wall-title">My Wall</h2>
-          <postContent/>
-          <postContent/>
-          <postContent/>
-          <postContent/>
-          <postContent/>
+          <h2 class="my-wall-title">My Wall</h2>  
+          <!-- <div v-for="post in posts" :key="post.id"> -->
+            <!-- <postContent :post="post.content" :created="post.created_at"/> -->
+            <postContent/>
+            <postContent/>
+            <postContent/>
+            <postContent/>
+            <postContent/>
+            
+          <!-- </div> -->
         </div>
     </div>
 </template>
@@ -22,6 +30,9 @@ import mainHeader from '~/components/Nav/header';
 import mainMenu from '~/components/Nav/menu';
 import postContent from '~/components/Post/postContent';
 import profileContent from '~/components/Profile/profileContent';
+import userQuery from "~/apollo/queries/user";
+import postQuery from "~/apollo/queries/posts";
+import gql from 'graphql-tag';
 
 export default {
     name: "index",
@@ -30,7 +41,35 @@ export default {
         mainMenu,
         postContent,
         profileContent
-    }
+    },
+    data: () => {
+      return {
+        user: [],
+        posts: [],
+        post: '',
+        post_created: '',
+      }
+    },
+    async fetch() {
+      try {
+        const response = await this.$apollo.query({
+          query: gql `${userQuery}`
+        });
+        this.user = response.data.user;
+      } catch (error) {
+        console.log(error);
+      }
+
+      try {
+        const response = await this.$apollo.query({
+          query: gql `${postQuery}`,
+          variable: {id: 1}
+        });
+        this.posts = response.data.post_by_user;
+      } catch (error) {
+        console.log(error);
+      }
+    },
 }
 </script>
 

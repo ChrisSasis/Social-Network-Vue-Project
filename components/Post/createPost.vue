@@ -3,15 +3,16 @@
         <div class="postarea-container">
             <div class="post-content">
                 <div class="post-area">
-                    <textarea name="" id="" cols="30" rows="10"
-                    placeholder="Share Something..." class="post-textarea"></textarea>
+                    <!-- <textarea name="" id="" cols="30" rows="10"
+                    placeholder="Share Something..." class="post-textarea"></textarea> -->
+                    <p contenteditable="true" class="post-textarea"></p>
                 </div>
             </div>
             <div class="post-footer">
-                <button class="btn-main btn-icon">
+                <!-- <button class="btn-main btn-icon">
                     <input type="file">
                     <img  src="~assets/default-img/add.svg" alt="">
-                </button>
+                </button> -->
                 <button class="btn-main btn-post">
                     Post
                 </button>
@@ -27,6 +28,16 @@ export default {
 </script>
 
 <style scoped>
+button {
+    outline:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
 .create-page {
     padding:20px;
     max-width:800px;
@@ -52,6 +63,15 @@ export default {
     display: block;
     outline:none;
     font-size:14px;
+    min-height:200px;
+    position:relative;
+}
+.post-textarea:before {
+    content:'Share Something...';
+    color:#222;
+}
+.post-textarea:focus:before {
+    content:'';
 }
 .post-footer {
     padding:10px 0px;

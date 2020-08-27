@@ -1,0 +1,14 @@
+query {
+    users {
+        data {
+            id
+            name
+            email
+            posts{
+                id
+                content
+                created_at
+            }
+        }
+    }
+}

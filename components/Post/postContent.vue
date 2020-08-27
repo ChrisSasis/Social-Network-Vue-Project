@@ -4,10 +4,12 @@
             <div class="post-wrapper">
                 <div class="post-content">
                     <div class="post-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aut odit, soluta esse velit modi? Laboriosam odit repellat enim ea aperiam excepturi? Animi molestiae nostrum natus commodi quod officia labore?
+                        <!-- {{post}} -->
+                        Lorem
                     </div>
                     <div class="post-footer">
-                        <span class="post-date">December 13, 2020</span>
+                        <!-- <span class="post-date">{{ $moment(created).format('LL') }}</span> -->
+                        December 1, 2020
                     </div>
                 </div>
             </div>
@@ -18,6 +20,7 @@
 <script>
 export default {
     name: "postContent",
+    props: ['post','created']
 }
 </script>
 

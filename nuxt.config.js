@@ -54,6 +54,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/apollo',
+    '@nuxtjs/moment',
   ],
   pwa: {
     manifest: {
@@ -61,11 +63,22 @@ export default {
       icons: ["/yourwall-logo.png"]
     },
   },
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://127.0.0.1:8000/graphql',
+      }
+    }
+  },
+  moment: {
+
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {},
+  
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

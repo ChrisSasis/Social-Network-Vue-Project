@@ -26,13 +26,13 @@
         <div class="other-cta">
             <ul class="cta-list">
                 <li>
-                    <a href="#" class="bullet-right cta-link">About Us</a>
+                    <a href="#" class="cta-link">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="bullet-right cta-link">Privacy</a>
+                    <a href="#" class="cta-link">Privacy</a>
                 </li>
                 <li>
-                    <a href="#" class="bullet-right cta-link">Terms</a>
+                    <a href="#" class="cta-link">Terms</a>
                 </li>
                 <li>
                     <a href="#" class="cta-link">Contact Us</a>
@@ -47,6 +47,18 @@ export default {
     name: "login"
 }
 </script>
+
+<style>
+a,button{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+</style>
 
 <style scoped>
 img {
@@ -121,7 +133,8 @@ img {
     font-size:14px;
 }
 .other-cta {
-    margin-top: 120px;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
 .bullet-right {
     position:relative;

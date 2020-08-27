@@ -9,9 +9,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.3",
     "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/svg": "^0.1.11",
+    "graphql-tag": "^2.11.0",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {}

@@ -35,6 +35,13 @@ img {
     max-width:180px;
     font-size:14px;
     font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .header-back-holder {
     width:22px;

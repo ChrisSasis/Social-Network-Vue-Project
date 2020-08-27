@@ -12,7 +12,10 @@
                 </div>
             </div>
             <div class="profile-details">
-                <h2 class="user-name">John Appleased</h2>
+                <h2 class="user-name">
+                    <!-- {{ name }} -->
+                    John Appleased
+                </h2>
             </div>
         </div>
         <!-- settings popup -->
@@ -47,6 +50,7 @@
 <script>
 export default {
     name: "profileContent",
+    props: ['name'],
     data() {
         return {
             settingsModal: false
@@ -73,6 +77,15 @@ export default {
 <style>
 .overflow-hidden {
     overflow: hidden;
+}
+button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 </style>
 
@@ -108,6 +121,12 @@ export default {
     border-radius:100px;
     letter-spacing: 0.45px;
     cursor:pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .btn-follow {
     border:none;
@@ -117,6 +136,12 @@ export default {
     font-family:'Roboto', sans-serif;
     letter-spacing:0.4px;
     outline:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .btn-edit {
     border-color:#0F4C75;
@@ -190,6 +215,13 @@ export default {
     list-style-type: none;
     margin:0;
     padding:0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 @media screen and (min-width:700px) {
     .modal-container {

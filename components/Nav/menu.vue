@@ -1,7 +1,7 @@
 <template>
     <div class="menu-fixed">
         <div class="menu">
-            <a href="/create" class="menu-btn">
+            <a href="/create" class="menu-btn" :style="'background-color:'+ color">
                 <div class="menu-btn-icon">
                     <img src="~assets/default-img/Vector-1.svg"/>
                 </div>
@@ -13,6 +13,7 @@
 <script>
 export default {
     name: "mainMenu",
+    props: ['color']
 }
 </script>
 
@@ -46,6 +47,13 @@ img {
     position:absolute;
     top:0;
     right:20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .menu-btn-icon {
     width:30px;

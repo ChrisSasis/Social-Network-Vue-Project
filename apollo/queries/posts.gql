@@ -1,0 +1,7 @@
+query PostByUser($id: Int) {
+  post_by_user(user_id: $id) {
+    id
+    content
+    created_at
+  }
+}
