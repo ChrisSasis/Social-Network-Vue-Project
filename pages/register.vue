@@ -38,13 +38,13 @@
         <div class="other-cta">
             <ul class="cta-list">
                 <li>
-                    <a href="#" class="bullet-right cta-link">About Us</a>
+                    <a href="#" class="cta-link">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="bullet-right cta-link">Privacy</a>
+                    <a href="#" class="cta-link">Privacy</a>
                 </li>
                 <li>
-                    <a href="#" class="bullet-right cta-link">Terms</a>
+                    <a href="#" class="cta-link">Terms</a>
                 </li>
                 <li>
                     <a href="#" class="cta-link">Contact Us</a>

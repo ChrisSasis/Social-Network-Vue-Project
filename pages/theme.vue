@@ -56,19 +56,21 @@
                     </li>
                 </ul>
                 <div class="theme-cta">
-                    <button class="btn-main" :style="'background-color:'+this.newColor+''">
+                    <button class="btn-main" :style="'background-color:'+this.newColor+''" @click="colorPicked()">
                         Done
                     </button>
                 </div>
             </div>
-            <div class="alert alert-success">
-                <span class="alert-text">Successfully Change your Theme</span>
-            </div>
-            <div class="alert alert-error">
-                <span class="alert-text">Successfully Change your Theme</span>
-            </div>
-            <div class="alert alert-warning">
-                <span class="alert-text">Successfully Change your Theme</span>
+            <div class="alert-float">
+                <div class="hide alert alert-success" v-bind:class="{'show':this.picked}">
+                    <span class="alert-text">Successfully Change your Theme</span>
+                </div>
+                <div class="hide alert alert-error">
+                    <span class="alert-text">Successfully Change your Theme</span>
+                </div>
+                <div class="hide alert alert-warning">
+                    <span class="alert-text">Successfully Change your Theme</span>
+                </div>
             </div>
         </div>
         <!-- settings popup -->
@@ -114,7 +116,8 @@ export default {
     data() {
         return {
             settingsModal: false,
-            newColor: ''
+            newColor: '',
+            picked: false,
         }
     },
     methods:{
@@ -126,6 +129,9 @@ export default {
         },
         changeTheme(color){
             this.newColor = color;
+        },
+        colorPicked() {
+            this.picked = true;
         }
     },
     head () {
@@ -176,6 +182,15 @@ a,button {
 .alert-warning {
     color:#222;
     background-color: #fff3cd;
+}
+.alert-float {
+    position:fixed;
+    top:10%;
+    left:0;
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+    padding:20px;
 }
 </style>
 
