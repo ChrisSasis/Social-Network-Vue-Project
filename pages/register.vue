@@ -4,7 +4,7 @@
             <div class="logo-holder">
                 <img src="/icon.png" alt="">
             </div>
-            <div class="title">BlahBlah | Beta</div>
+            <div class="title">ShoutSpace | Beta</div>
         </div>
         <div class="form-container">
             <div class="form-holder">
