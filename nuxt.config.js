@@ -22,7 +22,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/yourwall-logo.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap' }
     ]
   },
@@ -60,7 +60,8 @@ export default {
   pwa: {
     manifest: {
       name: "YourWall",
-      icons: ["/yourwall-logo.png"]
+      icons: ["/icon.png"],
+      fileName: '/icon.png',
     },
   },
   apollo: {

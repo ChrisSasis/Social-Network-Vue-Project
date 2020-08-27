@@ -2,7 +2,7 @@
     <div>
         <div class="logo">
             <div class="logo-holder">
-                <img src="/yourwall-logo.png" alt="">
+                <img src="/icon.png" alt="">
             </div>
             <div class="title">BlahBlah | Beta</div>
         </div>
