@@ -6,11 +6,11 @@
                     <div class="profile-image"  style="background-image:url('https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt_400x400.jpg')"></div>
                 </div>
                 <div class="profile-cta">
-                    <a href="/worldwide" class="btn btn-icon">
+                    <!-- <a href="/worldwide" class="btn btn-icon">
                         <div class="icon-holder">
                             <img src="~assets/default-img/globe.svg"/>
                         </div>
-                    </a>
+                    </a> -->
                     <button class="btn btn-follow" @click="showMenu">
                         Settings
                     </button>

@@ -5,6 +5,11 @@
             <div class="cta">
                 <a href="/" class="btn btn-back">Back to My Wall</a>
             </div>
+            <div class="worldwide-icon">
+                <div class="icon-holder">
+                    <img src="~assets/default-img/globe.svg"/>
+                </div>
+            </div>
         </div>
         <div class="post-container">
             <h2 class="title">Worldwide</h2>
@@ -55,6 +60,12 @@ a,button {
 .cta , .post-container {
     max-width:800px;
     margin:0 auto;
+}
+.worldwide-icon {
+    padding:0px 20px;
+}
+.icon-holder {
+    width:100px;
 }
 .cta {
     padding:20px;
