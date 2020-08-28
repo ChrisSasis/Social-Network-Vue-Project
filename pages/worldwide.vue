@@ -57,7 +57,7 @@ a,button {
 </style>
 
 <style scoped>
-.cta , .post-container {
+.cta , .post-container, .worldwide-icon {
     max-width:800px;
     margin:0 auto;
 }
