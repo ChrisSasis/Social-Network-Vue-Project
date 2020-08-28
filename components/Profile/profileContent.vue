@@ -6,6 +6,11 @@
                     <div class="profile-image"  style="background-image:url('https://pbs.twimg.com/profile_images/1210618202457292802/lt9KD2lt_400x400.jpg')"></div>
                 </div>
                 <div class="profile-cta">
+                    <a href="/worldwide" class="btn btn-icon">
+                        <div class="icon-holder">
+                            <img src="~assets/default-img/globe.svg"/>
+                        </div>
+                    </a>
                     <button class="btn btn-follow" @click="showMenu">
                         Settings
                     </button>
@@ -87,6 +92,9 @@ button {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
+img {
+    width:100%;
+}
 </style>
 
 <style scoped>
@@ -142,6 +150,20 @@ button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.btn-icon {
+    display:inline-block;
+    vertical-align: top;
+    width:36px;
+    height:36px;
+    padding:2px;
+    background:#fff;
+    border-color:#fff;
+}
+.btn-icon .icon-holder {
+    width:20px;
+    margin:0 auto;
+    padding-top:3px;
 }
 .btn-edit {
     border-color:#0F4C75;

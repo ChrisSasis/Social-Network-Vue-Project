@@ -4,11 +4,10 @@
             <div class="post-wrapper">
                 <div class="post-content">
                     <div class="post-body">
-                        <!-- {{post}} -->
                         Lorem
                     </div>
                     <div class="post-footer">
-                        <!-- <span class="post-date">{{ $moment(created).format('LL') }}</span> -->
+                        <strong class="post-user">@eliminate123</strong>
                         <span class="post-date">December 1, 2020</span>
                     </div>
                 </div>
@@ -19,14 +18,14 @@
 
 <script>
 export default {
-    name: "postContent",
-    props: ['post','created']
+    name: "publicPostContent",
+    // props: ['post','created']
 }
 </script>
 
 <style scoped>
 .post-holder {
-    padding:10px 20px;
+    padding:10px 0px;
 }
 .post-wrapper {
     width:100%;
@@ -35,14 +34,17 @@ export default {
     background-color:#F9F9F9;
     border-radius:10px;
 }
-.post-creator ,
+/* .post-creator ,
 .post-date{
-    display:block;
+    display:inline-block;
     width:100%;
+} */
+.post-user, .post-date {
+    display:inline-block;
 }
-.post-creator {
-    font-weight:700;
-    font-size:14px;
+.post-user {
+    color:#636363;
+    padding-right:10px;
 }
 .post-date {
     font-size:12px;

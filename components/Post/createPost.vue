@@ -13,6 +13,12 @@
                     <input type="file">
                     <img  src="~assets/default-img/add.svg" alt="">
                 </button> -->
+                <div class="post-public">
+                    <input type="checkbox" id="public" value="public">
+                    <div class="public-bg"></div>
+                    <label for="public">Worldwide</label>
+                </div>
+                
                 <button class="btn-main btn-post">
                     Post
                 </button>
@@ -112,5 +118,41 @@ button {
     right:0;
     font-size:14px;
     font-weight: 600;
+}
+.post-public {
+    position:relative;
+    max-width:150px;
+    padding:7px 20px;
+    text-align:center;
+    /* background:#ececec; */
+    border-radius: 100px;
+    cursor: pointer;
+    overflow:hidden;
+}
+.post-public input {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+    background:transparent
+}
+.public-bg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background:#ececec;
+}
+.post-public input:checked ~ .public-bg {
+    background:#206a5d;
+}
+.post-public input:checked ~ label {
+   color:#fff;
 }
 </style>
