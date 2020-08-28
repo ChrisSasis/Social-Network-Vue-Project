@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-button {
+.post-public, button {
     outline:none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -110,13 +110,12 @@ button {
     width:100%;
 }
 .btn-post {
-    padding:7px 20px;
+    padding:9px 25px;
     color:#Ffff;
     letter-spacing:0.4px;
     position:absolute;
     top:10px;
     right:0;
-    font-size:14px;
     font-weight: 600;
 }
 .post-public {
@@ -124,10 +123,12 @@ button {
     max-width:150px;
     padding:7px 20px;
     text-align:center;
-    /* background:#ececec; */
     border-radius: 100px;
     cursor: pointer;
     overflow:hidden;
+    font-family: 'Roboto',sans-serif;
+    /* font-weight: bold; */
+    letter-spacing: 0.4px;
 }
 .post-public input {
     position:absolute;
@@ -138,7 +139,7 @@ button {
     opacity: 0;
     cursor: pointer;
     z-index: 10;
-    background:transparent
+    background:transparent;
 }
 .public-bg {
     position:absolute;
@@ -150,7 +151,8 @@ button {
     background:#ececec;
 }
 .post-public input:checked ~ .public-bg {
-    background:#206a5d;
+    background: rgb(0,201,255);
+    background: linear-gradient(150deg, rgba(0,201,255,1) 20%, rgba(146,254,157,1) 100%);
 }
 .post-public input:checked ~ label {
    color:#fff;
